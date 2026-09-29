@@ -49,7 +49,7 @@ jobs:
         if: steps.detect-changes.outputs.changes == 'true'
         run: |
           git config user.name "GitHub Actions Bot"
-          git config user.email "github-actions@users.noreply.github.com"
+          git config user.email "nnhann99@gmail.com"
           git add README.md
           git commit -m "chore: auto update tool status"
           git push
