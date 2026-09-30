@@ -17,7 +17,7 @@
 | Total Tools | 23 |
 | 🟢 Online | 23 |
 | 🔴 Offline | 0 |
-| Last Updated | 9/30/2026, 11:18:59 PM (GMT+7) |
+| Last Updated | 9/30/2026, 11:24:55 PM (GMT+7) |
 
 ---
 
@@ -43,129 +43,356 @@
 
 ### Database & Backend
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Supabase](https://supabase.com) | PostgreSQL and backend services (Auth, Storage, Realtime) | 🟢 Online |
-| [Neon](https://neon.tech) | Serverless PostgreSQL | 🟢 Online |
-| [Firebase](https://firebase.google.com) | Authentication and cloud services | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://supabase.com">Supabase</a></td>
+<td>PostgreSQL and backend services (Auth, Storage, Realtime)</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://neon.tech">Neon</a></td>
+<td>Serverless PostgreSQL</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://firebase.google.com">Firebase</a></td>
+<td>Authentication and cloud services</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Cloud & Hosting
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Render](https://render.com) | Application hosting (Web, Worker, Cron) | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://render.com">Render</a></td>
+<td>Application hosting (Web, Worker, Cron)</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Storage & Media
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Cloudinary](https://cloudinary.com) | Image/Video storage and on-the-fly optimization | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cloudinary.com">Cloudinary</a></td>
+<td>Image/Video storage and on-the-fly optimization</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Email & Communication
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Resend](https://resend.com) | Transactional email for developers | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://resend.com">Resend</a></td>
+<td>Transactional email for developers</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### AI & ML
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Hugging Face](https://huggingface.co) | AI models, datasets, and Spaces hosting | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co">Hugging Face</a></td>
+<td>AI models, datasets, and Spaces hosting</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### UI & Design
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [UI.RIP](https://ui.rip) | Clone/recreate web UI elements | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://ui.rip">UI.RIP</a></td>
+<td>Clone/recreate web UI elements</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Developer Tools
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Webhook.site](https://webhook.site) | Instant webhook testing and debugging | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://webhook.site">Webhook.site</a></td>
+<td>Instant webhook testing and debugging</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### DevOps
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Dockhand](https://dockhand.pro) | Docker management | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://dockhand.pro">Dockhand</a></td>
+<td>Docker management</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Payment
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [SePay](https://sepay.vn) | Payment integration (VietQR & Banking) | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sepay.vn">SePay</a></td>
+<td>Payment integration (VietQR & Banking)</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Profile & Identity
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Gravatar](https://gravatar.com) | Globally Recognized User Avatars | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://gravatar.com">Gravatar</a></td>
+<td>Globally Recognized User Avatars</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Security
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Google reCAPTCHA](https://www.google.com/recaptcha/about/) | Anti-bot protection | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.google.com/recaptcha/about/">Google reCAPTCHA</a></td>
+<td>Anti-bot protection</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Productivity
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Notion](https://notion.so) | Documentation, planning and notes | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://notion.so">Notion</a></td>
+<td>Documentation, planning and notes</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Self-hosted
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Home Assistant](https://www.home-assistant.io) | Smart Home automation | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.home-assistant.io">Home Assistant</a></td>
+<td>Smart Home automation</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Hardware & Storage
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [Synology](https://www.synology.com) | NAS for file and backup storage | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.synology.com">Synology</a></td>
+<td>NAS for file and backup storage</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ### Social & Messaging Automation
 
-| Tool & Link | Purpose | Status |
-|---|---|---|
-| [FacebookBot](https://github.com/hungtraan/FacebookBot) | Facebook automation bot | 🟢 Online |
-| [fb-messenger-bot](https://github.com/hartleybrody/fb-messenger-bot) | Facebook Messenger bot template | 🟢 Online |
-| [messenger-bot](https://github.com/remixz/messenger-bot) | Facebook Messenger bot implementation | 🟢 Online |
-| [MetaBot](https://github.com/andriymaksymov/MetaBot) | Meta (Facebook) bot for automation | 🟢 Online |
-| [meta-ai-agent](https://github.com/AmirAlsad/meta-ai-agent) | Meta AI agent integration | 🟢 Online |
-| [instagram-mcp](https://github.com/setsmart-git/instagram-mcp) | Instagram MCP (Model Context Protocol) integration | 🟢 Online |
-| [messenger-platform-samples](https://github.com/fbsamples/messenger-platform-samples) | Official Facebook Messenger platform samples | 🟢 Online |
+<table>
+<thead>
+<tr>
+<th style="width: 40%">Tool & Link</th>
+<th style="width: 50%">Purpose</th>
+<th style="width: 10%">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/hungtraan/FacebookBot">FacebookBot</a></td>
+<td>Facebook automation bot</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hartleybrody/fb-messenger-bot">fb-messenger-bot</a></td>
+<td>Facebook Messenger bot template</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/remixz/messenger-bot">messenger-bot</a></td>
+<td>Facebook Messenger bot implementation</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/andriymaksymov/MetaBot">MetaBot</a></td>
+<td>Meta (Facebook) bot for automation</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/AmirAlsad/meta-ai-agent">meta-ai-agent</a></td>
+<td>Meta AI agent integration</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/setsmart-git/instagram-mcp">instagram-mcp</a></td>
+<td>Instagram MCP (Model Context Protocol) integration</td>
+<td>🟢 Online</td>
+</tr>
+<tr>
+<td><a href="https://github.com/fbsamples/messenger-platform-samples">messenger-platform-samples</a></td>
+<td>Official Facebook Messenger platform samples</td>
+<td>🟢 Online</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
@@ -183,5 +410,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 9/30/2026, 11:18:59 PM
+  🕐 Last updated: 9/30/2026, 11:24:55 PM
 </p>

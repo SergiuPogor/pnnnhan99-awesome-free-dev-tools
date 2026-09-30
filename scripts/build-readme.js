@@ -94,14 +94,27 @@ function generateMarkdown(toolsWithStatus) {
 
   for (const [category, items] of Object.entries(groups)) {
     md += `### ${category}\n\n`;
-    md += `| Tool & Link | Purpose | Status |\n`;
-    md += `|---|---|---|\n`;
+    md += `<table>\n`;
+    md += `<thead>\n`;
+    md += `<tr>\n`;
+    md += `<th style="width: 40%">Tool & Link</th>\n`;
+    md += `<th style="width: 50%">Purpose</th>\n`;
+    md += `<th style="width: 10%">Status</th>\n`;
+    md += `</tr>\n`;
+    md += `</thead>\n`;
+    md += `<tbody>\n`;
 
     for (const item of items) {
-      md += `| [${item.tool.name}](${item.tool.url}) | ${item.tool.purpose} | ${item.status} |\n`;
+      md += `<tr>\n`;
+      md += `<td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
+      md += `<td>${item.tool.purpose}</td>\n`;
+      md += `<td>${item.status}</td>\n`;
+      md += `</tr>\n`;
     }
 
-    md += `\n---\n\n`;
+    md += `</tbody>\n`;
+    md += `</table>\n\n`;
+    md += `---\n\n`;
   }
 
   md += `## 📝 Notes
