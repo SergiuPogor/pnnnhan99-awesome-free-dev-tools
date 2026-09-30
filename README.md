@@ -1,7 +1,7 @@
 # 🛠️ Awesome Free Dev Tools
 
-[![Total Tools](https://img.shields.io/badge/Total_Tools-16-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Online](https://img.shields.io/badge/Online-16-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Total Tools](https://img.shields.io/badge/Total_Tools-23-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-23-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Offline](https://img.shields.io/badge/Offline-0-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -14,10 +14,10 @@
 
 | Metric | Value |
 |---|---|
-| Total Tools | 16 |
-| 🟢 Online | 16 |
+| Total Tools | 23 |
+| 🟢 Online | 23 |
 | 🔴 Offline | 0 |
-| Last Updated | 9/30/2026, 4:19:51 AM (GMT+7) |
+| Last Updated | 9/30/2026, 11:14:00 PM (GMT+7) |
 
 ---
 
@@ -37,6 +37,7 @@
 - [Productivity](#productivity)
 - [Self-hosted](#self-hosted)
 - [Hardware & Storage](#hardware-storage)
+- [Social & Messaging Automation](#social-messaging-automation)
 
 ---
 
@@ -154,6 +155,20 @@
 
 ---
 
+### Social & Messaging Automation
+
+| Tool & Link | Purpose | Status |
+|---|---|---|
+| [FacebookBot](https://github.com/hungtraan/FacebookBot) | Facebook automation bot | 🟢 Online |
+| [fb-messenger-bot](https://github.com/hartleybrody/fb-messenger-bot) | Facebook Messenger bot template | 🟢 Online |
+| [messenger-bot](https://github.com/remixz/messenger-bot) | Facebook Messenger bot implementation | 🟢 Online |
+| [MetaBot](https://github.com/andriymaksymov/MetaBot) | Meta (Facebook) bot for automation | 🟢 Online |
+| [meta-ai-agent](https://github.com/AmirAlsad/meta-ai-agent) | Meta AI agent integration | 🟢 Online |
+| [instagram-mcp](https://github.com/setsmart-git/instagram-mcp) | Instagram MCP (Model Context Protocol) integration | 🟢 Online |
+| [messenger-platform-samples](https://github.com/fbsamples/messenger-platform-samples) | Official Facebook Messenger platform samples | 🟢 Online |
+
+---
+
 ## 📝 Notes
 
 - **Status** is automatically checked every night by GitHub Actions.
@@ -168,5 +183,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 9/30/2026, 4:19:51 AM
+  🕐 Last updated: 9/30/2026, 11:14:00 PM
 </p>
