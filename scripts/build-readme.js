@@ -59,7 +59,7 @@ function generateMarkdown(toolsWithStatus) {
   const groups = groupByCategory(toolsWithStatus);
   const now = new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" });
 
-  let md = `# 🛠️ Awesome Free Dev Tools
+  let md = `# 🛠️️ Awesome Free Dev Tools
 
 [![Total Tools](https://img.shields.io/badge/Total_Tools-${total}-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Online](https://img.shields.io/badge/Online-${online}-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
@@ -92,16 +92,30 @@ function generateMarkdown(toolsWithStatus) {
 
   md += `\n---\n\n`;
 
+  // Thay đổi ở đây: Dùng HTML Table để set width="100%" và ép % cho từng cột
   for (const [category, items] of Object.entries(groups)) {
     md += `### ${category}\n\n`;
-    md += `| Tool & Link | Purpose | Status |\n`;
-    md += `|---|---|---|\n`;
+    md += `<table width="100%">\n`;
+    md += `  <thead>\n`;
+    md += `    <tr>\n`;
+    md += `      <th width="25%">Tool & Link</th>\n`;
+    md += `      <th width="60%">Purpose</th>\n`;
+    md += `      <th width="15%">Status</th>\n`;
+    md += `    </tr>\n`;
+    md += `  </thead>\n`;
+    md += `  <tbody>\n`;
 
     for (const item of items) {
-      md += `| [${item.tool.name}](${item.tool.url}) | ${item.tool.purpose} | ${item.status} |\n`;
+      md += `    <tr>\n`;
+      md += `      <td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
+      md += `      <td>${item.tool.purpose}</td>\n`;
+      md += `      <td>${item.status}</td>\n`;
+      md += `    </tr>\n`;
     }
 
-    md += `\n---\n\n`;
+    md += `  </tbody>\n`;
+    md += `</table>\n\n`;
+    md += `---\n\n`;
   }
 
   md += `## 📝 Notes
