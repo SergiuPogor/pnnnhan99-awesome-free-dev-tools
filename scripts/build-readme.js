@@ -98,17 +98,20 @@ function generateMarkdown(toolsWithStatus) {
     md += `<table width="100%">\n`;
     md += `  <thead>\n`;
     md += `    <tr>\n`;
-    md += `      <th width="25%">Tool & Link</th>\n`;
-    md += `      <th width="60%">Purpose</th>\n`;
+    md += `      <th width="20%">Tool & Link</th>\n`;
+    md += `      <th width="50%">Purpose</th>\n`;
+    md += `      <th width="15%">Pricing</th>\n`;
     md += `      <th width="15%">Status</th>\n`;
     md += `    </tr>\n`;
     md += `  </thead>\n`;
     md += `  <tbody>\n`;
 
     for (const item of items) {
+      const pricing = item.tool.pricing || "N/A";
       md += `    <tr>\n`;
       md += `      <td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
       md += `      <td>${item.tool.purpose}</td>\n`;
+      md += `      <td>${pricing}</td>\n`;
       md += `      <td>${item.status}</td>\n`;
       md += `    </tr>\n`;
     }
