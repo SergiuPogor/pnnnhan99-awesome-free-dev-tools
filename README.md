@@ -17,32 +17,28 @@
 | Total Tools | 43 |
 | 🟢 Online | 43 |
 | 🔴 Offline | 0 |
-| Last Updated | 10/4/2026, 2:28:41 PM (GMT+7) |
+| Last Updated | 10/4/2026, 2:45:24 PM (GMT+7) |
 
 ---
 
 ## 📂 Table of Contents
 
-- [🛠️️ Awesome Free Dev Tools](#️️-awesome-free-dev-tools)
-  - [📋 Overview](#-overview)
-  - [📂 Table of Contents](#-table-of-contents)
-    - [Database \& Backend](#database--backend)
-    - [Cloud \& Hosting](#cloud--hosting)
-    - [Storage \& Media](#storage--media)
-    - [Email \& Communication](#email--communication)
-    - [AI \& ML](#ai--ml)
-    - [UI \& Design](#ui--design)
-    - [Developer Tools](#developer-tools)
-    - [DevOps](#devops)
-    - [Payment](#payment)
-    - [Profile \& Identity](#profile--identity)
-    - [Security](#security)
-    - [Productivity](#productivity)
-    - [Self-hosted](#self-hosted)
-    - [Hardware \& Storage](#hardware--storage)
-    - [Social \& Messaging Automation](#social--messaging-automation)
-    - [AI Coding IDEs \& Agents](#ai-coding-ides--agents)
-  - [📝 Notes](#-notes)
+- [Database & Backend](#database-backend)
+- [Cloud & Hosting](#cloud-hosting)
+- [Storage & Media](#storage-media)
+- [Email & Communication](#email-communication)
+- [AI & ML](#ai-ml)
+- [UI & Design](#ui-design)
+- [Developer Tools](#developer-tools)
+- [DevOps](#devops)
+- [Payment](#payment)
+- [Profile & Identity](#profile-identity)
+- [Security](#security)
+- [Productivity](#productivity)
+- [Self-hosted](#self-hosted)
+- [Hardware & Storage](#hardware-storage)
+- [Social & Messaging Automation](#social-messaging-automation)
+- [AI Coding IDEs & Agents](#ai-coding-ides-agents)
 
 ---
 
@@ -649,5 +645,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/4/2026, 2:28:41 PM
+  🕐 Last updated: 10/4/2026, 2:45:24 PM
 </p>
