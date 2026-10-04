@@ -8,6 +8,7 @@ const path = require("path");
 //   node --max-http-header-size=131072 scripts/build-readme.js
 
 const TOOLS_FILE = path.join(__dirname, "..", "data", "tools.json");
+const README_FILE = path.join(__dirname, "..", "README.md");
 const DOCS_DIR = path.join(__dirname, "..", "docs");
 const HTML_FILE = path.join(DOCS_DIR, "index.html");
 
@@ -75,6 +76,102 @@ function groupByCategory(toolsWithStatus) {
     groups[cat].push(item);
   }
   return groups;
+}
+
+function generateMarkdown(toolsWithStatus) {
+  const total = toolsWithStatus.length;
+  const online = toolsWithStatus.filter((t) => t.status === STATUS_ONLINE).length;
+  const offline = total - online;
+  const groups = groupByCategory(toolsWithStatus);
+  const now = new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" });
+
+  let md = `# 🛠️️ Awesome Free Dev Tools
+
+[![Total Tools](https://img.shields.io/badge/Total_Tools-${total}-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-${online}-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Offline](https://img.shields.io/badge/Offline-${offline}-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+> 🎯 **The best free-tier tools collection** for developers and Vibe Coders. Status is automatically checked every night to keep information accurate.
+>
+> 🤝 **Want to contribute?** Open a Pull Request or create an Issue to suggest a new tool!
+
+## 📋 Overview
+
+| Metric | Value |
+|---|---|
+| Total Tools | ${total} |
+| 🟢 Online | ${online} |
+| 🔴 Offline | ${offline} |
+| Last Updated | ${now} (GMT+7) |
+
+---
+
+## 📂 Table of Contents
+
+`;
+
+  for (const category of Object.keys(groups)) {
+    md += `- [${category}](#${slug(category)})\n`;
+  }
+
+  md += `\n---\n\n`;
+
+  // Thay đổi ở đây: Dùng HTML Table để set width="100%" và ép % cho từng cột
+  for (const [category, items] of Object.entries(groups)) {
+    md += `### ${category}\n\n`;
+    md += `<table width="100%">\n`;
+    md += `  <thead>\n`;
+    md += `    <tr>\n`;
+    md += `      <th width="6%"></th>\n`;
+    md += `      <th width="19%">Tool & Link</th>\n`;
+    md += `      <th width="45%">Purpose</th>\n`;
+    md += `      <th width="15%">Pricing</th>\n`;
+    md += `      <th width="15%">Status</th>\n`;
+    md += `    </tr>\n`;
+    md += `  </thead>\n`;
+    md += `  <tbody>\n`;
+
+    for (const item of items) {
+      const pricing = item.tool.pricing || "N/A";
+      const logo = faviconUrl(item.tool.url);
+      const logoCell = logo
+        ? `<img src="${logo}" width="24" height="24" alt="${escapeHtml(item.tool.name)} logo">`
+        : "";
+      md += `    <tr>\n`;
+      md += `      <td align="center">${logoCell}</td>\n`;
+      md += `      <td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
+      md += `      <td>${item.tool.purpose}</td>\n`;
+      md += `      <td>${pricing}</td>\n`;
+      md += `      <td>${item.status}</td>\n`;
+      md += `    </tr>\n`;
+    }
+
+    md += `  </tbody>\n`;
+    md += `</table>\n\n`;
+    md += `---\n\n`;
+  }
+
+  md += `## 📝 Notes
+
+- **Status** is automatically checked every night by GitHub Actions.
+- 🟢 Online: Server responds (status < 500).
+- 🔴 Offline: Timeout, DNS error, or server error (status >= 500).
+- All contributions welcome via PR at [GitHub](https://github.com/pnnnhan99/awesome-free-dev-tools).
+
+---
+
+<p align="center">
+  Made with 💜 by the <a href="https://github.com/pnnnhan99/awesome-free-dev-tools">Awesome Free Dev Tools</a> community
+</p>
+
+<p align="center">
+  🕐 Last updated: ${now}
+</p>
+`;
+
+  return md;
 }
 
 function generateHtml(toolsWithStatus) {
@@ -236,17 +333,21 @@ async function main() {
   const onlineCount = results.filter((r) => r.status === STATUS_ONLINE).length;
   console.log(`\n📊 Results: ${onlineCount}/${results.length} tools are online.`);
 
-  console.log("✨ Generating docs/index.html...");
+  console.log("✨ Generating README.md and docs/index.html...");
+  const markdown = generateMarkdown(results);
   const html = generateHtml(results);
 
+  const prevReadme = fs.existsSync(README_FILE) ? fs.readFileSync(README_FILE, "utf-8") : "";
   const prevHtml = fs.existsSync(HTML_FILE) ? fs.readFileSync(HTML_FILE, "utf-8") : "";
 
+  fs.writeFileSync(README_FILE, markdown, "utf-8");
   fs.mkdirSync(DOCS_DIR, { recursive: true });
   fs.writeFileSync(HTML_FILE, html, "utf-8");
 
+  console.log(`✅ README.md written successfully to: ${README_FILE}`);
   console.log(`✅ docs/index.html written successfully to: ${HTML_FILE}`);
 
-  if (prevHtml !== html) {
+  if (prevReadme !== markdown || prevHtml !== html) {
     console.log("🔄 Files have been updated.");
   } else {
     console.log("ℹ️  Content unchanged.");
@@ -265,5 +366,6 @@ module.exports = {
   escapeHtml,
   faviconUrl,
   groupByCategory,
+  generateMarkdown,
   generateHtml,
 };

@@ -39,7 +39,7 @@ jobs:
       - name: Check for changes
         id: detect-changes
         run: |
-          if git diff --quiet docs/index.html; then
+          if git diff --quiet README.md docs/index.html; then
             echo "changes=false" >> $GITHUB_OUTPUT
           else
             echo "changes=true" >> $GITHUB_OUTPUT
@@ -50,7 +50,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "nnhann99@gmail.com"
-          git add docs/index.html
+          git add README.md docs/index.html
           git commit -m "chore: auto update tool status"
           git push
         env:
