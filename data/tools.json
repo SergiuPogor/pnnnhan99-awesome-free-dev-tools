@@ -253,10 +253,10 @@
     },
     {
         "name": "Tabnine",
-        "url": "https://www.tricentis.com/tabnine",
+        "url": "https://www.tricentis.com/products/ai-workspace",
         "category": "AI Coding IDEs & Agents",
-        "purpose": "Enterprise AI coding assistant with context engine (acquired by Tricentis)",
-        "pricing": "Freemium"
+        "purpose": "Enterprise AI coding assistant (acquired by Tricentis, now AI Workspace)",
+        "pricing": "Enterprise"
     },
     {
         "name": "Claude Code",
