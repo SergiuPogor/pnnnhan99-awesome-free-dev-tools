@@ -128,7 +128,7 @@ function generateMarkdown(toolsWithStatus) {
     md += `      <th width="19%">Tool & Link</th>\n`;
     md += `      <th width="45%">Purpose</th>\n`;
     md += `      <th width="15%">Pricing</th>\n`;
-    md += `      <th width="15%">Status</th>\n`;
+    md += `      <th width="15%" align="right">Status</th>\n`;
     md += `    </tr>\n`;
     md += `  </thead>\n`;
     md += `  <tbody>\n`;
@@ -144,7 +144,7 @@ function generateMarkdown(toolsWithStatus) {
       md += `      <td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
       md += `      <td>${item.tool.purpose}</td>\n`;
       md += `      <td>${pricing}</td>\n`;
-      md += `      <td>${item.status}</td>\n`;
+      md += `      <td align="right">${item.status}</td>\n`;
       md += `    </tr>\n`;
     }
 
@@ -215,7 +215,7 @@ function generateHtml(toolsWithStatus) {
             <col class="col-status">
           </colgroup>
           <thead>
-            <tr><th><span class="sr-only">Logo</span></th><th>Tool &amp; Link</th><th>Purpose</th><th>Pricing</th><th>Status</th></tr>
+            <tr><th><span class="sr-only">Logo</span></th><th>Tool &amp; Link</th><th>Purpose</th><th>Pricing</th><th class=status>Status</th></tr>
           </thead>
           <tbody>
 ${rows}
@@ -261,9 +261,9 @@ ${rows}
     .col-purpose { width: 45%; }
     .col-pricing { width: 15%; }
     .col-status { width: 15%; }
-    .status { white-space: nowrap; }
+    .status { white-space: nowrap; text-align: right; }
     .logo-cell { text-align: center; vertical-align: middle; }
-    .logo { width: 24px; height: 24px; border-radius: 6px; object-fit: contain; display: block; margin: 0 auto; }
+    .logo { width: 24px; height: 24px; border-radius: 6px; object-fit: contain; display: block; margin: 0 auto; background: #fff; padding: 4px; box-shadow: 0 0 0 1px #334155, 0 2px 8px rgba(0,0,0,0.4); }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     a { color: #3b82f6; text-decoration: none; }
     a:hover { text-decoration: underline; }

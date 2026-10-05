@@ -175,7 +175,7 @@
         "pricing": "Freemium"
     },
     {
-        "name": "Windsurf",
+        "name": "Devin (Windsurf)",
         "url": "https://windsurf.com",
         "category": "AI Coding IDEs & Agents",
         "purpose": "Agentic IDE with Devin cloud agent built-in",
@@ -232,7 +232,7 @@
     },
     {
         "name": "Roo Code",
-        "url": "https://github.com/RooCodeInc/Roo-Code",
+        "url": "https://roomote.dev/",
         "category": "AI Coding IDEs & Agents",
         "purpose": "AI-powered dev team in VS Code (archived)",
         "pricing": "Open Source"
@@ -253,7 +253,7 @@
     },
     {
         "name": "Tabnine",
-        "url": "https://www.tricentis.com/products/ai-workspace",
+        "url": "https://docs.tabnine.com/main",
         "category": "AI Coding IDEs & Agents",
         "purpose": "Enterprise AI coding assistant (acquired by Tricentis, now AI Workspace)",
         "pricing": "Enterprise"
