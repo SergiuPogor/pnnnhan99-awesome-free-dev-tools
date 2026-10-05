@@ -21,6 +21,13 @@
         "pricing": "Free Tier"
     },
     {
+        "name": "Cloudflare D1",
+        "url": "https://developers.cloudflare.com/d1/",
+        "category": "Database & Backend",
+        "purpose": "Serverless SQL database built on SQLite with global read replication and native Cloudflare Workers integration",
+        "pricing": "Free Tier"
+    },
+    {
         "name": "Render",
         "url": "https://render.com",
         "category": "Cloud & Hosting",
