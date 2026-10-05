@@ -1,7 +1,7 @@
 # 🛠️️ Awesome Free Dev Tools
 
-[![Total Tools](https://img.shields.io/badge/Total_Tools-44-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Online](https://img.shields.io/badge/Online-44-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Total Tools](https://img.shields.io/badge/Total_Tools-45-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-45-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Offline](https://img.shields.io/badge/Offline-0-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -14,10 +14,10 @@
 
 | Metric | Value |
 |---|---|
-| Total Tools | 44 |
-| 🟢 Online | 44 |
+| Total Tools | 45 |
+| 🟢 Online | 45 |
 | 🔴 Offline | 0 |
-| Last Updated | 10/5/2026, 12:45:42 PM (GMT+7) |
+| Last Updated | 10/5/2026, 2:12:06 PM (GMT+7) |
 
 ---
 
@@ -99,6 +99,13 @@
       <td><a href="https://render.com">Render</a></td>
       <td>Application hosting (Web, Worker, Cron)</td>
       <td>Free Tier</td>
+      <td align="right">🟢 Online</td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://www.google.com/s2/favicons?domain=shipvela.com&sz=64" width="24" height="24" alt="Shipvela logo"></td>
+      <td><a href="https://shipvela.com/">Shipvela</a></td>
+      <td>Publish React, Vite and static sites from GitHub or a CLI; custom domains and managed HTTPS</td>
+      <td>Free Tier: 3 projects, 20 publishes/month</td>
       <td align="right">🟢 Online</td>
     </tr>
   </tbody>
@@ -652,5 +659,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/5/2026, 12:45:42 PM
+  🕐 Last updated: 10/5/2026, 2:12:06 PM
 </p>
