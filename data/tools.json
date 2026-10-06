@@ -28,6 +28,13 @@
         "pricing": "Free Tier"
     },
     {
+        "name": "Vercel",
+        "url": "https://vercel.com",
+        "category": "Cloud & Hosting",
+        "purpose": "Frontend cloud platform with serverless functions",
+        "pricing": "Free Tier"
+    },
+    {
         "name": "Cloudinary",
         "url": "https://cloudinary.com",
         "category": "Storage & Media",
@@ -312,6 +319,6 @@
         "url": "https://shipvela.com/",
         "category": "Cloud & Hosting",
         "purpose": "Publish React, Vite and static sites from GitHub or a CLI; custom domains and managed HTTPS",
-        "pricing": "Free Tier: 3 projects, 20 publishes/month"
+        "pricing": "Free Tier"
     }
 ]

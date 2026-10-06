@@ -126,8 +126,8 @@ function generateMarkdown(toolsWithStatus) {
     md += `    <tr>\n`;
     md += `      <th width="6%"></th>\n`;
     md += `      <th width="19%">Tool & Link</th>\n`;
-    md += `      <th width="45%">Purpose</th>\n`;
-    md += `      <th width="15%">Pricing</th>\n`;
+    md += `      <th width="40%">Purpose</th>\n`;
+    md += `      <th width="20%">Pricing</th>\n`;
     md += `      <th width="15%" align="right">Status</th>\n`;
     md += `    </tr>\n`;
     md += `  </thead>\n`;

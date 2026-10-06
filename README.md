@@ -1,7 +1,7 @@
 # 🛠️️ Awesome Free Dev Tools
 
-[![Total Tools](https://img.shields.io/badge/Total_Tools-45-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Online](https://img.shields.io/badge/Online-45-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Total Tools](https://img.shields.io/badge/Total_Tools-46-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-46-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Offline](https://img.shields.io/badge/Offline-0-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -14,10 +14,10 @@
 
 | Metric | Value |
 |---|---|
-| Total Tools | 45 |
-| 🟢 Online | 45 |
+| Total Tools | 46 |
+| 🟢 Online | 46 |
 | 🔴 Offline | 0 |
-| Last Updated | 10/6/2026, 11:19:38 AM (GMT+7) |
+| Last Updated | 10/6/2026, 11:29:12 PM (GMT+7) |
 
 ---
 
@@ -98,6 +98,13 @@
       <td align="center"><img src="https://www.google.com/s2/favicons?domain=render.com&sz=64" width="24" height="24" alt="Render logo"></td>
       <td><a href="https://render.com">Render</a></td>
       <td>Application hosting (Web, Worker, Cron)</td>
+      <td>Free Tier</td>
+      <td align="right">🟢 Online</td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=64" width="24" height="24" alt="Vercel logo"></td>
+      <td><a href="https://vercel.com">Vercel</a></td>
+      <td>Frontend cloud platform with serverless functions</td>
       <td>Free Tier</td>
       <td align="right">🟢 Online</td>
     </tr>
@@ -659,5 +666,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/6/2026, 11:19:38 AM
+  🕐 Last updated: 10/6/2026, 11:29:12 PM
 </p>
