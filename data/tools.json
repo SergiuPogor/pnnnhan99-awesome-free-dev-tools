@@ -21,6 +21,20 @@
         "pricing": "Free Tier"
     },
     {
+        "name": "Turso",
+        "url": "https://turso.tech",
+        "category": "Database & Backend",
+        "purpose": "Serverless SQLite database with edge replication",
+        "pricing": "Free Tier"
+    },
+    {
+        "name": "Prisma",
+        "url": "https://www.prisma.io",
+        "category": "Database & Backend",
+        "purpose": "Type-safe ORM for TypeScript and Node.js",
+        "pricing": "Open Source"
+    },
+    {
         "name": "Render",
         "url": "https://render.com",
         "category": "Cloud & Hosting",

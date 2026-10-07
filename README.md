@@ -1,7 +1,7 @@
 # 🛠️️ Awesome Free Dev Tools
 
-[![Total Tools](https://img.shields.io/badge/Total_Tools-46-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Online](https://img.shields.io/badge/Online-46-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Total Tools](https://img.shields.io/badge/Total_Tools-48-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-48-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Offline](https://img.shields.io/badge/Offline-0-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -14,10 +14,10 @@
 
 | Metric | Value |
 |---|---|
-| Total Tools | 46 |
-| 🟢 Online | 46 |
+| Total Tools | 48 |
+| 🟢 Online | 48 |
 | 🔴 Offline | 0 |
-| Last Updated | 10/7/2026, 12:03:18 AM (GMT+7) |
+| Last Updated | 10/7/2026, 2:19:56 PM (GMT+7) |
 
 ---
 
@@ -70,6 +70,18 @@
       <td style="vertical-align: middle;"><a href="https://firebase.google.com">Firebase</a></td>
       <td style="vertical-align: middle;">Authentication and cloud services</td>
       <td style="text-align: center; vertical-align: middle;">Free Tier</td>
+      <td style="text-align: right; vertical-align: middle;">🟢 Online</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><a href="https://turso.tech">Turso</a></td>
+      <td style="vertical-align: middle;">Serverless SQLite database with edge replication</td>
+      <td style="text-align: center; vertical-align: middle;">Free Tier</td>
+      <td style="text-align: right; vertical-align: middle;">🟢 Online</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><a href="https://www.prisma.io">Prisma</a></td>
+      <td style="vertical-align: middle;">Type-safe ORM for TypeScript and Node.js</td>
+      <td style="text-align: center; vertical-align: middle;">Open Source</td>
       <td style="text-align: right; vertical-align: middle;">🟢 Online</td>
     </tr>
   </tbody>
@@ -604,5 +616,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/7/2026, 12:03:18 AM
+  🕐 Last updated: 10/7/2026, 2:19:56 PM
 </p>
