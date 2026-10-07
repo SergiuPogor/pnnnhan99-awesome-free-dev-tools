@@ -118,33 +118,26 @@ function generateMarkdown(toolsWithStatus) {
 
   md += `\n---\n\n`;
 
-  // Thay đổi ở đây: Dùng HTML Table để set width="100%" và ép % cho từng cột
   for (const [category, items] of Object.entries(groups)) {
     md += `### ${category}\n\n`;
-    md += `<table width="100%">\n`;
+    md += `<table>\n`;
     md += `  <thead>\n`;
     md += `    <tr>\n`;
-    md += `      <th width="6%"></th>\n`;
-    md += `      <th width="19%">Tool & Link</th>\n`;
-    md += `      <th width="45%">Purpose</th>\n`;
-    md += `      <th width="15%">Pricing</th>\n`;
-    md += `      <th width="15%" align="right">Status</th>\n`;
+    md += `      <th>Tool & Link</th>\n`;
+    md += `      <th>Purpose</th>\n`;
+    md += `      <th>Pricing</th>\n`;
+    md += `      <th>Status</th>\n`;
     md += `    </tr>\n`;
     md += `  </thead>\n`;
     md += `  <tbody>\n`;
 
     for (const item of items) {
       const pricing = item.tool.pricing || "N/A";
-      const logo = faviconUrl(item.tool.url);
-      const logoCell = logo
-        ? `<img src="${logo}" width="24" height="24" alt="${escapeHtml(item.tool.name)} logo">`
-        : "";
       md += `    <tr>\n`;
-      md += `      <td align="center">${logoCell}</td>\n`;
-      md += `      <td><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
-      md += `      <td>${item.tool.purpose}</td>\n`;
-      md += `      <td>${pricing}</td>\n`;
-      md += `      <td align="right">${item.status}</td>\n`;
+      md += `      <td style="vertical-align: middle;"><a href="${item.tool.url}">${item.tool.name}</a></td>\n`;
+      md += `      <td style="vertical-align: middle;">${item.tool.purpose}</td>\n`;
+      md += `      <td style="text-align: center; vertical-align: middle;">${pricing}</td>\n`;
+      md += `      <td style="text-align: right; vertical-align: middle;">${item.status}</td>\n`;
       md += `    </tr>\n`;
     }
 
