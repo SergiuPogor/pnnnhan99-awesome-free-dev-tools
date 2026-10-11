@@ -19,9 +19,9 @@
 | Metric | Value |
 |---|---|
 | Total Tools | 55 |
-| 🟢 Online | 55 |
-| 🔴 Offline | 0 |
-| Last Updated | 10/11/2026, 10:23:49 AM (GMT+7) |
+| 🟢 Online | 54 |
+| 🔴 Offline | 1 |
+| Last Updated | 10/11/2026, 8:17:18 PM (GMT+7) |
 
 ---
 
@@ -316,7 +316,7 @@
       <td style="vertical-align: middle;"><a href="https://webhook.site">Webhook.site</a></td>
       <td style="vertical-align: middle;">Instant webhook testing and debugging</td>
       <td style="text-align: center; vertical-align: middle;">Free</td>
-      <td style="text-align: right; vertical-align: middle;">🟢</td>
+      <td style="text-align: right; vertical-align: middle;">🔴</td>
     </tr>
     <tr>
       <td style="vertical-align: middle;"><a href="https://github.com/vostride/agent-qa">Agent QA</a></td>
@@ -357,7 +357,7 @@
       <td style="vertical-align: middle;"><a href="https://dockhand.pro">Dockhand</a></td>
       <td style="vertical-align: middle;">Docker management</td>
       <td style="text-align: center; vertical-align: middle;">Free Tier</td>
-      <td style="text-align: right; vertical-align: middle;">🔴</td>
+      <td style="text-align: right; vertical-align: middle;">🟢</td>
     </tr>
     <tr>
       <td style="vertical-align: middle;"><a href="https://uptime.kuma.pet/">Uptime Kuma</a></td>
@@ -662,5 +662,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/11/2026, 10:23:49 AM
+  🕐 Last updated: 10/11/2026, 8:17:18 PM
 </p>
