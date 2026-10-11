@@ -12,8 +12,8 @@ const README_FILE = path.join(__dirname, "..", "README.md");
 const DOCS_DIR = path.join(__dirname, "..", "docs");
 const HTML_FILE = path.join(DOCS_DIR, "index.html");
 
-const STATUS_ONLINE = "🟢 Online";
-const STATUS_OFFLINE = "🔴 Offline";
+const STATUS_ONLINE = "🟢";
+const STATUS_OFFLINE = "🔴";
 
 const BROWSER_HEADERS = {
   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
@@ -86,6 +86,10 @@ function generateMarkdown(toolsWithStatus) {
   const now = new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" });
 
   let md = `# 🛠️️ Awesome Free Dev Tools
+
+<div align="center">
+  <img width="300" alt="Awesome Free Dev Tools" src="awesome-free-dev-tools.png">
+</div>
 
 [![Total Tools](https://img.shields.io/badge/Total_Tools-${total}-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Online](https://img.shields.io/badge/Online-${online}-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
@@ -211,7 +215,7 @@ function generateHtml(toolsWithStatus) {
             <tr><th><span class="sr-only">Logo</span></th><th>Tool &amp; Link</th><th>Purpose</th><th>Pricing</th><th class=status>Status</th></tr>
           </thead>
           <tbody>
-${rows}
+            ${rows}
           </tbody>
         </table>
       </section>
@@ -225,63 +229,7 @@ ${rows}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🛠️ Awesome Free Dev Tools</title>
   <meta name="description" content="The best free-tier tools collection for developers and Vibe Coders">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
-    .header { background: linear-gradient(135deg, #1e3a5f, #0f172a); padding: 40px 20px; text-align: center; border-bottom: 3px solid #3b82f6; }
-    .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    .header p { font-size: 1.1rem; color: #94a3b8; max-width: 700px; margin: 0 auto; }
-    .stats { display: flex; justify-content: center; gap: 30px; margin: 20px auto; flex-wrap: wrap; }
-    .stat-card { background: #1e293b; padding: 20px 30px; border-radius: 12px; text-align: center; min-width: 150px; border: 1px solid #334155; }
-    .stat-card .number { font-size: 2rem; font-weight: bold; }
-    .stat-card .label { font-size: 0.9rem; color: #94a3b8; margin-top: 5px; }
-    .stat-card.live .number { color: #22c55e; }
-    .stat-card.dead .number { color: #ef4444; }
-    .main-container { display: flex; max-width: 1400px; margin: 0 auto; padding: 20px; gap: 30px; }
-    .sidebar { flex: 0 0 250px; position: sticky; top: 20px; height: fit-content; max-height: calc(100vh - 40px); overflow-y: auto; }
-    .toc { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px 25px; }
-    .toc h2 { font-size: 1rem; margin-bottom: 12px; color: #94a3b8; text-transform: uppercase; }
-    .toc ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .toc a { font-size: 0.95rem; color: #3b82f6; text-decoration: none; padding: 6px 10px; border-radius: 6px; display: block; transition: background 0.2s; }
-    .toc a:hover { background: #334155; text-decoration: none; }
-    .content { flex: 1; min-width: 0; }
-    .category { margin-bottom: 35px; scroll-margin-top: 20px; }
-    .category h2 { font-size: 1.5rem; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #334155; display: flex; align-items: center; gap: 10px; }
-    .category h2 .count { font-size: 0.85rem; font-weight: 600; color: #93c5fd; background: #1e3a5f; border-radius: 999px; padding: 2px 10px; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 10px; table-layout: fixed; }
-    th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #1e293b; vertical-align: middle; overflow-wrap: anywhere; line-height: 1.5; }
-    th { background: #1e293b; font-weight: 600; }
-    tbody tr:hover { background: #1e293b; }
-    .col-logo { width: 6%; }
-    .col-tool { width: 19%; }
-    .col-purpose { width: 45%; }
-    .col-pricing { width: 15%; }
-    .col-status { width: 15%; }
-    .status { white-space: nowrap; text-align: right; }
-    .logo-cell { text-align: center; vertical-align: middle; }
-    .logo { width: 24px; height: 24px; border-radius: 6px; object-fit: contain; display: inline-block; vertical-align: middle; background: #fff; padding: 4px; box-shadow: 0 0 0 1px #334155, 0 2px 8px rgba(0,0,0,0.4); }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-    a { color: #3b82f6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer { text-align: center; padding: 30px; color: #64748b; border-top: 1px solid #1e293b; margin-top: 40px; }
-    @media (max-width: 1024px) {
-      .main-container { flex-direction: column; }
-      .sidebar { flex: none; position: static; max-height: none; overflow-y: visible; width: 100%; }
-      .toc ul { flex-direction: row; flex-wrap: wrap; gap: 8px 18px; }
-      .toc a { padding: 4px 8px; }
-    }
-    @media (max-width: 768px) {
-      .header h1 { font-size: 1.8rem; }
-      table { font-size: 0.85rem; }
-      th, td { padding: 8px 10px; }
-      .col-logo { width: 12%; }
-      .col-tool { width: 28%; }
-      .col-purpose { width: 40%; }
-      .col-pricing { width: 10%; }
-      .col-status { width: 10%; }
-      .status { white-space: normal; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="header">
@@ -302,12 +250,13 @@ ${rows}
       <nav class="toc">
         <h2>📂 Table of Contents</h2>
         <ul>
-${toc}
+          ${toc}
         </ul>
       </nav>
     </aside>
     <main class="content">
-${sections}    </main>
+      ${sections}    
+    </main>
   </div>
   <div class="footer">
     <p>Made with 💜 by the Awesome Free Dev Tools community</p>
