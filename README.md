@@ -5,8 +5,8 @@
 </div>
 
 [![Total Tools](https://img.shields.io/badge/Total_Tools-55-blue?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Online](https://img.shields.io/badge/Online-54-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
-[![Offline](https://img.shields.io/badge/Offline-1-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Online](https://img.shields.io/badge/Online-55-brightgreen?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
+[![Offline](https://img.shields.io/badge/Offline-0-red?style=for-the-badge)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![Auto Update](https://img.shields.io/badge/Auto_Update-Active-purple?style=for-the-badge&logo=github-actions)](https://github.com/pnnnhan99/awesome-free-dev-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -19,9 +19,9 @@
 | Metric | Value |
 |---|---|
 | Total Tools | 55 |
-| 🟢 Online | 54 |
-| 🔴 Offline | 1 |
-| Last Updated | 10/11/2026, 8:17:18 PM (GMT+7) |
+| 🟢 Online | 55 |
+| 🔴 Offline | 0 |
+| Last Updated | 10/12/2026, 10:47:09 AM (GMT+7) |
 
 ---
 
@@ -316,7 +316,7 @@
       <td style="vertical-align: middle;"><a href="https://webhook.site">Webhook.site</a></td>
       <td style="vertical-align: middle;">Instant webhook testing and debugging</td>
       <td style="text-align: center; vertical-align: middle;">Free</td>
-      <td style="text-align: right; vertical-align: middle;">🔴</td>
+      <td style="text-align: right; vertical-align: middle;">🟢</td>
     </tr>
     <tr>
       <td style="vertical-align: middle;"><a href="https://github.com/vostride/agent-qa">Agent QA</a></td>
@@ -662,5 +662,5 @@
 </p>
 
 <p align="center">
-  🕐 Last updated: 10/11/2026, 8:17:18 PM
+  🕐 Last updated: 10/12/2026, 10:47:09 AM
 </p>
